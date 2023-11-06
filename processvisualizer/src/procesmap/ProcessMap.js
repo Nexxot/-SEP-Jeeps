@@ -1,15 +1,14 @@
 import React,{useState,useRef,useEffect} from 'react';
 import ReactFlow from 'reactflow';
+import NodeCircle from './nodetypes/NodeCircle.js';
 import RedNodeCircle from './nodetypes/RedNodeCircle.js';
-import RedNodeCircleStart from './nodetypes/RedNodeCircleStart.js';
 import GreenNodeCircle from './nodetypes/GreenNodeCircle.js';
 import BlueNodeCircle from './nodetypes/BlueNodeCircle.js';
 import PurpleNodeCircle from './nodetypes/PurpleNodeCircle.js';
 import YellowNodeCircle from './nodetypes/YellowNodeCircle.js';
 import 'reactflow/dist/style.css';
 
-const nodeTypes = { redCircle: RedNodeCircle , redCircleStart: RedNodeCircleStart, greenCircle: GreenNodeCircle, blueCircle: BlueNodeCircle,
-                        purpleCircle: PurpleNodeCircle, yellowCircle: YellowNodeCircle}; // Outside to prevent rerendering and performance issues
+const nodeTypes = { nodeCircle: NodeCircle}; // Outside to prevent rerendering and performance issues
 
 export default function ProcessMap() {
   let [nodes, setNodes] = useState([]);
@@ -27,21 +26,24 @@ export default function ProcessMap() {
       let yPos = getCenterOfProcessMap().y;
       nodes = setNodes([{
         id: 'node1',
-        type: 'redCircleStart',
+        type: 'nodeCircle',
         data: { label: 'Node 1' },
         position: { x: xPos, y: yPos},
+        data: {title: 'Test', color: 'red'},
       },
       {
         id: 'node2',
-        type: 'redCircle',
+        type: 'nodeCircle',
         data: { label: 'Node 2' },
         position: { x: xPos, y: yPos + 300},
+        data: {color: 'blue'},
       },
       {
         id: 'node3',
-        type: 'redCircle',
+        type: 'nodeCircle',
         data: { label: 'Node 3' },
         position: { x: xPos, y: yPos + 600 },
+        data: {color: 'yellow'},
       }]);
     }
   }, []); 
