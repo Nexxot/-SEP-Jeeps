@@ -1,11 +1,6 @@
 import React,{useState,useRef,useEffect} from 'react';
 import ReactFlow from 'reactflow';
 import NodeCircle from './nodetypes/NodeCircle.js';
-import RedNodeCircle from './nodetypes/RedNodeCircle.js';
-import GreenNodeCircle from './nodetypes/GreenNodeCircle.js';
-import BlueNodeCircle from './nodetypes/BlueNodeCircle.js';
-import PurpleNodeCircle from './nodetypes/PurpleNodeCircle.js';
-import YellowNodeCircle from './nodetypes/YellowNodeCircle.js';
 import 'reactflow/dist/style.css';
 
 const nodeTypes = { nodeCircle: NodeCircle}; // Outside to prevent rerendering and performance issues
@@ -29,7 +24,7 @@ export default function ProcessMap() {
         type: 'nodeCircle',
         data: { label: 'Node 1' },
         position: { x: xPos, y: yPos},
-        data: {title: 'Test', color: 'red'},
+        data: {title: '-', color: 'red'},
       },
       {
         id: 'node2',
