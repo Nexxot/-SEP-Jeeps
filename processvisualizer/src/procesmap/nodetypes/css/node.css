@@ -1,0 +1,30 @@
+.red_circle {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius:50%;
+  }
+  .green_circle {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    border-radius:50%;
+  }
+  .blue_circle {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border-radius:50%;
+  }
+  .yellow_circle {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    border-radius:50%;
+  }
+  .purple_circle {
+    background-color: purple;
+    height: 100px;
+    width: 100px;
+    border-radius:50%;
+  }
