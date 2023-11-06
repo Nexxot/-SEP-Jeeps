@@ -1,18 +1,17 @@
 import { Handle, Position } from 'reactflow';
 import './css/node.css';
  
-export default function NoceCircle({data}) {
-  let title = data.title;
+export default function NodeCircle({data}) {
+  let title = data.title; //Only add title if it exists
   let color = data.color;   
-
+  
   return (
     <>
       <Handle type="target" position={Position.Top} />
-      <div class={color + '_circle'}>
-        { title != null ? // Check if title exists
-         <p style={{textAlignVertical: "center",textAlign: "center"}}>{title}</p>
-        :  <p></p>
-        }
+      {title && <p style={{ textAlign: "center", fontSize: 50}}>
+          {title}
+          </p>} 
+      <div className={color + '_circle'}>
       </div>
       <Handle type="source" position={Position.Bottom} id="a" />
     </>

@@ -24,7 +24,7 @@ export default function ProcessMap() {
         type: 'nodeCircle',
         data: { label: 'Node 1' },
         position: { x: xPos, y: yPos},
-        data: {title: '-', color: 'red'},
+        data: {title: '-----', color: 'red'},
       },
       {
         id: 'node2',

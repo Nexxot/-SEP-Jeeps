@@ -9,12 +9,18 @@ import ProcessMap from './procesmap/ProcessMap';
 const App = () => {
     return (
         <div>
-            <NavigationBar />
-            <div className="parent">
-                <div className="views">2 </div>
-                <div className="processes">3 </div>
-                <div className="meta"> 4</div>
-                <div class="processmap"><ProcessMap></ProcessMap></div>
+             <div className="parent">
+                <NavigationBar />
+                <div className="views"></div>
+                <div className="processes">
+                    <div class="parent">
+                        <div class="div1"> </div>
+                        <div class="div2"> </div>
+                        <div class="div3"><ProcessMap></ProcessMap> </div>
+                    </div>
+                </div>
+                <div className="meta"></div>
+                <div class="processmap"></div>
             </div>
         </div>
     );
