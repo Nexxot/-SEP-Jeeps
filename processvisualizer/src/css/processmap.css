@@ -6,9 +6,9 @@
   grid-row-gap: 0px;
   height: 100vh;
   }
-  
+
   .headnotes {
-    grid-area: 1 / 1 / 2 / 6; 
+    grid-area: 1 / 1 / 2 / 6;
     background-color: yellow;
   }
   .views { 

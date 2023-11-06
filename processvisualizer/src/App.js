@@ -1,6 +1,7 @@
 import './css/processmap.css';
 import './css/navbar.css'
 import Nav from 'react-bootstrap/Nav';
+import Image from 'react-bootstrap/Image';
 
 function App() {
   return (
@@ -10,20 +11,38 @@ function App() {
               activeKey="/home"
               onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
           >
-              <Nav.Item>
-                  <Nav.Link eventKey="Add">ADD</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                  <Nav.Link eventKey="Delete">DELETE</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                  <Nav.Link eventKey="link-2">Link</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                  <Nav.Link eventKey="disabled" disabled>
-                      Disabled
-                  </Nav.Link>
-              </Nav.Item>
+          <div class="navBar">
+              <div class="navButton">
+                  <Nav.Item>
+                      <Nav.Link eventKey="Add">ADD</Nav.Link>
+                  </Nav.Item>
+              </div>
+              <div className="navButton">
+                  <Nav.Item>
+                      <Nav.Link eventKey="Delete">DELETE</Nav.Link>
+                  </Nav.Item>
+              </div>
+              <div className="navButton">
+                  <Nav.Item>
+                      <Nav.Link eventKey="Approve">APPROVE</Nav.Link>
+                  </Nav.Item>
+              </div>
+              <div className="navButton">
+                  <Nav.Item>
+                      <Nav.Link eventKey="Export">EXPORT</Nav.Link>
+                  </Nav.Item>
+              </div>
+              <div className="navButton">
+                  <Nav.Item>
+                      <Nav.Link eventKey="Settings">SETTINGS</Nav.Link>
+                  </Nav.Item>
+              </div>
+              <div className="navButton" id="userIcon">
+                  <Nav.Item>
+                      <Nav.Link eventKey="UserIcon"><Image src="default_user_icon.jpeg" rounded></Image></Nav.Link>
+                  </Nav.Item>
+              </div>
+          </div>
           </Nav>
       </div>
       <div class="views">2 </div>
