@@ -1,6 +1,4 @@
 import React from 'react';
-import { EdgeText, EdgeTextPath, EdgeTextBackground } from 'react-flow-renderer';
-import { Background } from 'reactflow';
 
 export const ColoredEdge = ({ data, edge, sourceX, sourceY, targetX, targetY, label, style = {} }) => {
     const centerX = (sourceX + targetX) / 2;
