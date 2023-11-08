@@ -11,97 +11,122 @@ const edgeTypes = {coloredEdge: ColoredEdge};
 export default function ProcessMap() {
   let [nodes, setNodes] = useState([]);
 
-  const edges = [{ id: '1', source: 'node1', target: 'node2' , type: 'coloredEdge',data: {color: 'blue', curve: 0}},
-  { id: '2', source: 'node2', target: 'node9' , type: 'coloredEdge',data: {color: 'blue', curve: 25}},
-  { id: '3', source: 'node3', target: 'node4' , type: 'coloredEdge',data: {color: 'blue', curve: 0}},
-  { id: '4', source: 'node6', target: 'node7' , type: 'coloredEdge',data: {color: 'red', curve: 0}},
-  { id: '5', source: 'node7', target: 'node9' , type: 'coloredEdge',data: {color: 'red', curve: 25}},
-  { id: '4', source: 'node9', target: 'node3' , type: 'coloredEdge',data: {color: 'blue', curve: 25}},
-  { id: '5', source: 'node9', target: 'node8' , type: 'coloredEdge',data: {color: 'red', curve: 25}}
+  const edges = [
+    { id: 'b1b2', source: 'blue1', target: 'blue2' , type: 'coloredEdge',data: {color: 'blue', curve: 0}},
+    { id: 'b2bo1_2', source: 'blue2', target: 'overlap1_2' , type: 'coloredEdge',data: {color: 'blue', curve: 100}},
+    { id: 'o1_2b3', source: 'overlap1_2', target: 'blue3' , type: 'coloredEdge',data: {color: 'blue', curve: 100}},
+    { id: 'b3b4', source: 'blue3', target: 'blue4' , type: 'coloredEdge',data: {color: 'blue', curve: 0}},
+    { id: 'r1o1_2', source: 'red1', target: 'overlap1_2' , type: 'coloredEdge',data: {color: 'red', curve: 0}},
+    { id: 'o1_2r2', source: 'overlap1_2', target: 'red2' , type: 'coloredEdge',data: {color: 'red', curve: 0}},
+    { id: 'p1o1_3', source: 'purple1', target: 'overlap1_3' , type: 'coloredEdge',data: {color: 'purple', curve: 0}},
+    { id: 'o1_3p2', source: 'overlap1_3', target: 'purple2' , type: 'coloredEdge',data: {color: 'purple', curve: 0}},
+    { id: 'p2p3', source: 'purple2', target: 'purple3' , type: 'coloredEdge',data: {color: 'purple', curve: 0}}
   ];
 
   const divRef = useRef(null);
 
   useEffect(() => {
     if (divRef.current) {
-      let xPos = getCenterOfProcessMap().x;
-      let yPos = getCenterOfProcessMap().y;
       //Start +60px down y level
       nodes = setNodes([{
-        id: 'node0',
+        id: 'name1',
         type: 'nodeCircle',
         position: { x: 40, y: 60},
         data: {title: 'Order2Cash', color: 'blue'},
       },
       {
-        id: 'node1',
+        id: 'blue1',
         type: 'nodeCircle',
         position: { x: 40, y: 120},
         data: { color: 'blue'},
       },
       {
-        id: 'node2',
+        id: 'blue2',
         type: 'nodeCircle',
         position: { x: 250, y: 120},
         data: {color: 'blue'},
       },
       {
-        id: 'node3',
+        id: 'blue3',
         type: 'nodeCircle',
         position: { x: 750, y: 120},
         data: {color: 'blue'},
       },
       {
-        id: 'node4',
+        id: 'blue4',
         type: 'nodeCircle',
         position: { x: 900, y: 120},
         data: {color: 'blue'},
       },
       {
-        id: 'node5',
+        id: 'name2',
+        type: 'nodeCircle',
+        position: { x: 450, y: 60},
+        data: {title: 'Design2Release', color: 'purple'},
+      },
+      {
+        id: 'purple1',
+        type: 'nodeCircle',
+        position: { x: 525, y: 120},
+        data: { color: 'purple', edgesUpDown: true},
+      },
+      {
+        id: 'purple2',
+        type: 'nodeCircle',
+        position: { x: 525, y: 500},
+        data: { color: 'purple', edgesUpDown: true},
+      },
+      {
+        id: 'purple3',
+        type: 'nodeCircle',
+        position: { x: 525, y: 700},
+        data: { color: 'purple', edgesUpDown: true},
+      },
+      {
+        id: 'name3',
         type: 'nodeCircle',
         position: { x: 40, y: 300},
         data: {title: 'Plan2Deliver', color: 'red'},
       },
       {
-        id: 'node6',
+        id: 'red1',
         type: 'nodeCircle',
         position: { x: 40, y: 360},
         data: { color: 'red'},
       },
       {
-        id: 'node7',
+        id: 'red2',
         type: 'nodeCircle',
-        position: { x: 250, y: 360},
-        data: {color: 'red'},
+        position: { x: 900, y: 360},
+        data: { color: 'red'},
       },
       {
-        id: 'node8',
-        type: 'nodeCircle',
-        position: { x: 750, y: 360},
-        data: {color: 'red'},
-      },
-      {
-        id: 'node9',
+        id: 'overlap1_1',
         type: 'nodeOverlap',
-        position: { x: 500, y: 200},
-        data: {color: 'red'},
+        position: { x: 535, y: 360},
+        data: { source: 'TOP'},
+      },
+      {
+        id: 'overlap1_2',
+        type: 'nodeOverlap',
+        position: { x: 535, y: 360},
+        data: { source: 'RIGHT'},
+      },
+      {
+        id: 'overlap1_3',
+        type: 'nodeOverlap',
+        position: { x: 535, y: 360},
+        data: { source: 'BOTTOM'},
+      },
+      {
+        id: 'overlap1_4',
+        type: 'nodeOverlap',
+        position: { x: 535, y: 360},
+        data: { source: 'LEFT'},
       }
     ]);
     }
   }, []); 
-
-  function getCenterOfProcessMap() {
-    // Get the dimensions of the div
-    //const divRect = mapRef.current.getBoundingClientRect();
-  
-    // Calculate the center coordinates
-    let divRect = divRef.current.getBoundingClientRect();
-    const centerX = divRect.left + divRect.left * 2;
-    const centerY = divRect.top + divRect.top * 2;
-  
-    return { x: centerX, y: centerY };
-  }
 
   return (
     <div ref={divRef} style={{ width: '100vw', height: '100vh' }}>

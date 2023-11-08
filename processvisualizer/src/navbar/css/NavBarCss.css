@@ -1,0 +1,65 @@
+.form-check {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-check-input {
+    margin-right: 10px; /* Adjust the spacing as needed */
+  }
+.colorViewSquareRed {
+    width: 20px; 
+    height: 20px;
+    position: absolute; 
+    display: inline-block;
+    margin-left: 125px; 
+    background-color: red; 
+}
+.colorViewSquareBlue {
+    width: 20px; 
+    height: 20px; 
+    position: absolute;
+    display: inline-block;
+    margin-left: 125px; 
+    background-color: blue; 
+}
+.colorViewSquareGreen {
+    width: 20px; 
+    height: 20px; 
+    position: absolute;
+    display: inline-block;
+    margin-left: 125px; 
+    background-color: green; 
+}
+.colorViewSquarePurple {
+    width: 20px; 
+    height: 20px; 
+    position: absolute;
+    display: inline-block;
+    margin-left: 125px; 
+    background-color: purple; 
+}
+.colorPrcoessSquare_blue {
+    width: 20px; 
+    height: 20px; 
+    position: absolute;
+    display: inline-block;
+    background-color: blue; 
+}
+.colorPrcoessSquare_red {
+    width: 20px; 
+    height: 20px; 
+    position: absolute;
+    display: inline-block;
+    background-color: red; 
+}
+.colorPrcoessSquare_purple {
+    width: 20px; 
+    height: 20px; 
+    position: absolute;
+    display: inline-block;
+    background-color: purple; 
+}
+.pushLabel {
+    margin-left: 125px;
+}

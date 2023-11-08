@@ -4,10 +4,7 @@ import './css/node.css';
 export default function NodeCircle({ data }) {
   const title = data.title; // Only add title if it exists
   const color = data.color;
-  const isStartNode = data.isStartNode;
-  const isEndNode = data.isEndNode;
-  // Define an offset value for the Handle components
-  const handleOffsetX = -20; // Adjust this value as needed
+  const edgesUpDown = data.edgesUpDown;
 
   return (
     <div>
@@ -19,11 +16,17 @@ export default function NodeCircle({ data }) {
           <div> 
             <div>
               <div className={color + '_circle'}></div>
-            </div>
-            <div>
-              <Handle type="target" position={Position.Left} />
-              <Handle type="source" position={Position.Right} />
-           </div>
+            </div> 
+            {edgesUpDown ?
+                <div> 
+                  <Handle type="target" position={Position.Top} />
+                  <Handle type="source" position={Position.Bottom} />
+                </div>
+                :
+                <div>
+                  <Handle type="target" position={Position.Left} />
+                  <Handle type="source" position={Position.Right} />
+                </div>}
          </div>
       }
     </div>

@@ -9,16 +9,20 @@
   }
   .views { 
     grid-area: 2 / 1 / 3 / 6; 
-    background-color: red;
+    background-color: light;
+    height:40px;
   }
   .cut1 { 
     grid-area: 3 / 1 / 6 / 2; 
+    height: 100vh;
   }
   .cut2 {
      grid-area: 3 / 5 / 6 / 6; 
+     height: 100vh;
     }
   .cut3 {
      grid-area: 3 / 2 / 6 / 5; 
+     height: 100vh;
     }
 
 
@@ -33,14 +37,28 @@
       
 .processes {
    grid-area: 1 / 1 / 6 / 2;
-   background-color: yellow;
+   width: 24vh;
+   border: 3px solid black;
+   background-color: white;
 }
-.meta { 
-  grid-area: 1 / 5 / 6 / 6;
+.metaOld { 
+  grid-area: 1 / 2 / 6 / 6;
   background-color: black;
  }
-.processMap { 
-  grid-area: 1 / 2 / 6 / 5;
-  background-color: gray;
+ .meta { 
+  background-color: black;
+  width: 100vw; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+}
+.processMapMetaOpen { 
+  width: 135vh;
+  background-color: white;
+  border: 3px solid black;
   overflow: hidden;
  }    
+ .processMapMetaClosed { 
+  grid-area: 1 / 2 / 6 / 6;
+  background-color: white;
+  border: 3px solid black;
+  overflow: hidden;
+ }  
