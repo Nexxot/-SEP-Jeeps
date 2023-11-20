@@ -9,8 +9,8 @@ export default function ProcessAccordion({data}) {
     <Accordion defaultActiveKey="0">
     <Accordion.Item eventKey="1">
       <Accordion.Header>
-      <label className='pushLabel'>{title}</label>
-      <div className={'colorPrcoessSquare_' + color }></div>
+      <label className='pushLabel'>{title} </label>
+      <div className={'colorPrcoessSquare_' + color } data-testid="colorSquare"></div>
     </Accordion.Header>
       <Accordion.Body>
       {inside.map((item, index) => (

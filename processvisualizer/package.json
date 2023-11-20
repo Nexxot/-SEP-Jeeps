@@ -1,5 +1,4 @@
 {
-  "homepage": "http://Nexxot.github.io/-SEP-Jeeps",
   "name": "processvisualizer",
   "version": "0.1.0",
   "private": true,
@@ -8,23 +7,27 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.2",
-    "create-react-app": "^5.0.1",
+    "create-react-app": "1.2.1",
+    "d3": "^7.8.5",
+    "gantt-task-react": "^0.3.9",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-flow-renderer": "^10.3.17",
+    "react-force-graph-2d": "^1.25.2",
+    "react-force-graph-3d": "^1.24.0",
     "react-router-dom": "^6.18.0",
-    "react-scripts": "5.0.1",
     "reactflow": "^11.9.4",
+    "three": "^0.158.0",
+    "three-spritetext": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +48,11 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "babel-jest": "^29.7.0",
+    "cypress": "^13.5.0",
+    "react-scripts": "^5.0.1",
+    "resize-observer-polyfill": "^1.5.1"
   }
 }

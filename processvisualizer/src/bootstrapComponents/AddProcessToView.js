@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import './css/NavBarCss.css'
+import './css/AddProcessToViewCss.css'
 
 function AddProcess({}) {
   const [show, setShow] = useState(false);

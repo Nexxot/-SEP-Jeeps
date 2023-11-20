@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da5cace8.css",
+    "main.js": "/static/js/main.6c567c94.js",
+    "static/media/PI_logo.PNG": "/static/media/PI_logo.a6ccc4c459bf88a885db.PNG",
+    "index.html": "/index.html",
+    "main.da5cace8.css.map": "/static/css/main.da5cace8.css.map",
+    "main.6c567c94.js.map": "/static/js/main.6c567c94.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da5cace8.css",
+    "static/js/main.6c567c94.js"
+  ]
+}

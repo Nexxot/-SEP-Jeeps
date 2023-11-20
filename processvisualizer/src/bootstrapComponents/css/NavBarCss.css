@@ -63,3 +63,14 @@
 .pushLabel {
     margin-left: 125px;
 }
+
+.userIconDropDown {
+    background-color: transparent;
+    border: none;
+
+}
+.userIconDropDown:hover,
+.userIconDropDown:active{
+    background-color: transparent;
+    border: none;
+}

@@ -1,0 +1,23 @@
+{
+    "nodes": [
+      { "id": "1", "name": "Node 1", "hp": "HP 1", "processType": "Main", "dependant": "", "start": "2023, 10, 1", "end": "2023, 11, 31"},
+      { "id": "2", "name": "Node 2", "hp": "HP 1", "processType": "Part", "dependant": "1", "start": "2023, 10, 1", "end": "2023, 10, 24"},
+      { "id": "3", "name": "Node 3", "hp": "HP 1", "processType": "Part", "dependant": "1", "start": "2023, 10, 24", "end": "2023, 10, 31"},
+      { "id": "4", "name": "Node 4", "hp": "HP 1", "processType": "Part", "dependant": "2", "start": "2023, 11, 1", "end": "2023, 11, 24"},
+      { "id": "5", "name": "Node 5", "hp": "HP 1", "processType": "Part", "dependant": "2", "start": "2023, 11, 24", "end": "2023, 11, 31"},
+      { "id": "6", "name": "Node 6", "hp": "HP 2", "processType": "Main", "dependant": "15", "start": "2023, 10, 1", "end": "2023, 11, 31"},
+      { "id": "7", "name": "Node 7", "hp": "HP 2", "processType": "Part", "dependant": "6", "start": "2023, 10, 1", "end": "2023, 10, 24"},
+      { "id": "8", "name": "Node 8", "hp": "HP 2", "processType": "Part", "dependant": "7", "start": "2023, 10, 24", "end": "2023, 10, 31"},
+      { "id": "9", "name": "Node 9", "hp": "HP 3", "processType": "Main", "dependant": "", "start": "2023, 11, 1", "end": "2023, 11, 24"},
+      { "id": "10", "name": "Node 10", "hp": "HP 3", "processType": "Part", "dependant": "9", "start": "2023, 11, 24", "end": "2023, 11, 31"},
+
+      { "id": "11", "name": "Node 11", "hp": "HP 4", "processType": "Main", "dependant": "", "start": "2023, 11, 1", "end": "2023, 11, 24"},
+      { "id": "12", "name": "Node 12", "hp": "HP 4", "processType": "Part", "dependant": "11", "start": "2023, 11, 24", "end": "2023, 11, 31"},
+      { "id": "13", "name": "Node 13", "hp": "HP 4", "processType": "Part", "dependant": "12", "start": "2023, 10, 1", "end": "2023, 11, 31"},
+      { "id": "14", "name": "Node 14", "hp": "HP 4", "processType": "Part", "dependant": "13 4", "start": "2023, 10, 1", "end": "2023, 10, 24"},
+      { "id": "15", "name": "Node 15", "hp": "HP 5", "processType": "Main", "dependant": "", "start": "2023, 10, 24", "end": "2023, 10, 31"},
+      { "id": "16", "name": "Node 16", "hp": "HP 5", "processType": "Part", "dependant": "15 9", "start": "2023, 11, 1", "end": "2023, 11, 24"},
+      { "id": "17", "name": "Node 17", "hp": "HP 5", "processType": "Part", "dependant": "16", "start": "2023, 11, 24", "end": "2023, 11, 31"}
+    ]
+}
+  
