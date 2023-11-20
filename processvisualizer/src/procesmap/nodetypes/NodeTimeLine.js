@@ -11,7 +11,6 @@ export default function NodeTimeLine({data}) {
           backgroundColor: data.color,
           height: '40px',
           width: `${data.width}px`,
-          borderRadius: '0%',
           textAlign: 'left',
           fontSize: 25,
           color: 'white',
