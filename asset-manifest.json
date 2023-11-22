@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/-SEP-Jeeps/static/css/main.a05e555f.css",
-    "main.js": "/-SEP-Jeeps/static/js/main.28536953.js",
-    "static/media/PI_logo.PNG": "/-SEP-Jeeps/static/media/PI_logo.a6ccc4c459bf88a885db.PNG",
+    "main.css": "/-SEP-Jeeps/static/css/main.fa43ba47.css",
+    "main.js": "/-SEP-Jeeps/static/js/main.60c981ec.js",
+    "static/media/default_user_icon.png": "/-SEP-Jeeps/static/media/default_user_icon.eccd4b0a9fc3c779509c.png",
     "index.html": "/-SEP-Jeeps/index.html",
-    "main.a05e555f.css.map": "/-SEP-Jeeps/static/css/main.a05e555f.css.map",
-    "main.28536953.js.map": "/-SEP-Jeeps/static/js/main.28536953.js.map"
+    "main.fa43ba47.css.map": "/-SEP-Jeeps/static/css/main.fa43ba47.css.map",
+    "main.60c981ec.js.map": "/-SEP-Jeeps/static/js/main.60c981ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.a05e555f.css",
-    "static/js/main.28536953.js"
+    "static/css/main.fa43ba47.css",
+    "static/js/main.60c981ec.js"
   ]
 }
